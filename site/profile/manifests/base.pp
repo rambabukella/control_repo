@@ -7,5 +7,6 @@ class profile::base {
     }
   file { '/etc/motd1':
     ensure => file,
-    content => "\n this is \n \t ${fqdn} ",
+    content => "\tWelcom to ${fqdn}\n",
+    }
 }
