@@ -1,5 +1,15 @@
-##
+## Install puppetmaster
+use online document
+### setup r10k
 Create empty dir on puppetmaster
 mkdir /etc/puppetlabs/r10k
+## add path to root .bash_profile
+PATH=$PATH:/opt/puppetlabs/puppet/bin
+## install r10k gem
+[root@puppetmaster ~]# gem install r10k
+## install git
+yum install -y git
 ## copy r10.yaml  to puppet master
 create /etc/puppetlabs/r10k/r10k.yaml 
+###deploy the code.
+r10k deploy environment -p
