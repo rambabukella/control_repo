@@ -1,0 +1,5 @@
+##
+Create empty dir on puppetmaster
+mkdir /etc/puppetlabs/r10k
+## copy r10.yaml  to puppet master
+create /etc/puppetlabs/r10k/r10k.yaml 
