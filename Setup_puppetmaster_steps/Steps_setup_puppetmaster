@@ -17,3 +17,8 @@ r10k deploy environment -p
 #To install agent # on centos/RHEL 8
 dnf -y install https://yum.puppetlabs.com/puppet-release-el-8.noarch.rpm ;
 sudo dnf -y install puppet-agent
+
+##To sign all ca certs in puppetmaster
+
+puppetserver ca sign  --all
+
