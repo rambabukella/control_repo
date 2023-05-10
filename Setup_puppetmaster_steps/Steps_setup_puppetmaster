@@ -13,3 +13,7 @@ yum install -y git
 create /etc/puppetlabs/r10k/r10k.yaml 
 ###deploy the code.
 r10k deploy environment -p
+
+#To install agent # on centos/RHEL 8
+dnf -y install https://yum.puppetlabs.com/puppet-release-el-8.noarch.rpm ;
+sudo dnf -y install puppet-agent
