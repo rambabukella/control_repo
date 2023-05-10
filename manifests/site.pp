@@ -6,3 +6,6 @@ node 'puppetmaster.localdomain.com' {
 node /^web/ {
   include role::web_server
 }
+node /^docker/ {
+  include role::docker_server
+}
